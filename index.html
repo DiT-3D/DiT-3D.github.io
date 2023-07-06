@@ -277,9 +277,6 @@ figure {
             <span class="author-block text-center"><sup>3</sup>CUHK,</span>
             <span class="author-block text-center"><sup>4</sup>TUM</span>
         </div>
-        <!-- <div class="affil-row">
-            <div class="venue text-center"><b>NeurIPS 2023</b></div>
-        </div> -->
 
         <div style="clear: both">
             <div class="paper-btn-parent">
@@ -289,21 +286,12 @@ figure {
             </a>
             <a class="supp-btn" href="https://github.com/DiT-3D/DiT-3D">
                 <span class="material-icons"> description </span> 
-                 Code (soon)
+                 Code
             </a>
         </div></div>
     </div>
 
     <section id="teaser">
-            <!-- <video class="centered" width="100%" controls muted loop autoplay>
-                <source src="assets/teaser.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> -->
-            <!-- <figure style="width: 90%;">
-                <a href="assets/teaser.png">
-                    <img width="100%" src="assets/teaser.png">
-                </a>
-            </figure> -->
             <video class="centered" width="100%" muted loop autoplay>
                 <source src="assets/teaser.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -314,26 +302,11 @@ figure {
             <source src="assets/framework.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
-            <!-- <figure style="width: 90%;">
-                <a href="assets/framework.png">
-                    <img width="100%" src="assets/framework.png">
-                </a>
-                <p class="caption" style="margin-bottom: 1px;">
-                    Our DiT-3D takes voxelized point clouds as input, and a patchification operator is used to generate token-level patch embeddings, where 3D positional embeddings are added together. Then, multiple transformer blocks based on 3D window attention extract point-voxel representations from all input tokens. Finally, the unpatchified voxel tensor output from a linear layer is devoxelized to predict the noise in the point cloud space.
-                </p>
-            </figure> -->
         <p class="caption" style="margin-bottom: 1px;">
             Our DiT-3D takes voxelized point clouds as input, and a patchification operator is used to generate token-level patch embeddings, where 3D positional embeddings are added together. Then, multiple transformer blocks based on 3D window attention extract point-voxel representations from all input tokens. Finally, the unpatchified voxel tensor output from a linear layer is devoxelized to predict the noise in the point cloud space.
         </p>
     </section>
 
-    <!-- <section id="news">
-        <h2>News</h2>
-        <hr>
-        <div class="row">
-            <div><span class="material-icons"> event </span> [Dec 2021] Check out our <a href="https://github.com/NVIDIAGameWorks/kaolin/blob/master/examples/tutorial/dmtet_tutorial.ipynb">tutorial</a> that demonstrates using DMTet for 3D reconstruction! <a href="https://kaolin.readthedocs.io/en/latest/modules/kaolin.ops.conversions.html#kaolin.ops.conversions.marching_tetrahedra">Marching tetrahedra</a>, <a href="https://kaolin.readthedocs.io/en/latest/modules/kaolin.ops.mesh.html?highlight=subdivide#kaolin.ops.mesh.subdivide_tetmesh">volume subdivision</a> and <a href="https://kaolin.readthedocs.io/en/latest/modules/kaolin.ops.mesh.html?highlight=subdivision#kaolin.ops.mesh.subdivide_trianglemesh">surface subdivision</a> modules are also released in Kaolin. </div>
-        </div>
-    </section> -->
 
 
     <section id="abstract"/>
@@ -349,26 +322,6 @@ figure {
             Experimental results on the ShapeNet dataset demonstrate that the proposed DiT-3D achieves state-of-the-art performance in high-fidelity and diverse 3D point cloud generation.
             </p>
     </section>
-
-    <!-- <hr> -->
-    <!-- <section id="teaser-videos">
-        <div class="flex-row">
-        <figure style="width: 50%;">
-            <video class="centered" width="90%" controls muted loop autoplay>
-                <source src="assets/mtri.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </figure>
-            <div style="width: 50%;">
-                <br><br>
-                <p> <strong>DMTet</strong> predicts the underlying surface parameterized by an implicit function encoded via <strong>a deformable tetrahedral grid</strong>. The underlying surface is converted into an explicit mesh with a Marching Tetrahedra (MT) algorithm, which we show is differentiable. Therefore, DMTet can jointly optimize the surface geometry and topology using <strong>losses defined expliciitly on the surface mesh</strong>.</p> 
-
-                <p>Here we demonstrate this with a 2D example, where the loss is defined as the distance between extracted surface (shown in <span style="color: red">red</span>) with ground truth point cloud (shown in <span style="color: purple">purple</span>). </p>
-            </div>
-        </div>
-    </section> -->
-
-
 
 
 
